@@ -1,0 +1,17 @@
+.gallery { 
+    .wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 16px;
+        margin-bottom: 16px;
+        justify-content: center;
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            width: 512px;
+            height: 384px;
+        }
+    }
+}
