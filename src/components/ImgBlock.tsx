@@ -11,13 +11,15 @@ const ImgBlock = ({images}: ImgBlockProps) => {
             {images.map((imageUrl, index) => (
                 <div
                     key={index}
-                    className="item"  
+                    className="item"
+                      
                 >
                     <Image
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
-                        width={380}
-                        height={250}
+                        style={{ width: index % 2 === 0 ? "290px" : "420px" }}
+                        width={420}
+                        height={300}
                     />
                 </div>
             ))}

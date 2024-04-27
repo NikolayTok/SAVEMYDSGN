@@ -3,15 +3,15 @@ import "../styles/gallery.scss";
 
 const Gallery = () => {
     const imagesTop = [
-        "/images/imgBlock/image1.jpg",
+        "/images/imgBlock/image4.jpg",
         "/images/imgBlock/image2.jpg",
         "/images/imgBlock/image3.jpg",
     ];
     const imagesBottom = [
-        "/images/imgBlock/image1.jpg",
         "/images/imgBlock/image2.jpg",
-        "/images/imgBlock/image3.jpg",
         "/images/imgBlock/image1.jpg",
+        "/images/imgBlock/image3.jpg",
+        "/images/imgBlock/image4.jpg",
         
     ];
 
