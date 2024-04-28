@@ -1,18 +1,19 @@
 import Image from "next/image";
 
-
 interface ImgBlockProps {
     images: string[];
+    rowClass: string;
 }
 
-const ImgBlock = ({images}: ImgBlockProps) => {
+const ImgBlock = ({ images, rowClass }: ImgBlockProps) => {
+
     return (
-        <div className="wrapper">
+        <div className={`wrapper ${rowClass}`}>
             {images.map((imageUrl, index) => (
                 <div
                     key={index}
                     className="item"
-                      
+
                 >
                     <Image
                         src={imageUrl}
