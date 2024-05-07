@@ -1,25 +1,29 @@
 import Image from "next/image";
+import "../styles/image-list.scss";
 
 interface ImgBlockProps {
     images: string[];
-    rowClass: string;
+    reverse?: boolean;
 }
 
-const ImgBlock = ({ images, rowClass }: ImgBlockProps) => {
+const ImgBlock = ({ images, reverse }: ImgBlockProps) => {
+
+    const computedWidth = (index: number) => {
+        return index % 2 === 0 ? 290 : 420
+    }
 
     return (
-        <div className={`wrapper ${rowClass}`}>
-            {images.map((imageUrl, index) => (
+        <div className={reverse ? 'image-list-reverse' : 'image-list'}>
+            {images.map((image, index) => (
                 <div
                     key={index}
-                    className="item"
+                    className="image-list__item"
 
                 >
                     <Image
-                        src={imageUrl}
+                        src={image}
                         alt={`Image ${index + 1}`}
-                        style={{ width: index % 2 === 0 ? "290px" : "420px" }}
-                        width={420}
+                        width={computedWidth(index)}
                         height={300}
                     />
                 </div>
