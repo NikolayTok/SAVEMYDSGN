@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 import '../styles/header.scss';
+import AppButton from './AppButton';
 
 const Header = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
             <Link href="/contact">Contact</Link>
             </li>
         </ul>
-        <button>Press B to book intro call</button>
+        <AppButton>Press B to book intro call</AppButton>
       </nav>
     </header>
   );
