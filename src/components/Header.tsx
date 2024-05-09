@@ -26,7 +26,7 @@ const Header = () => {
             <Link href="/contact">Contact</Link>
             </li>
         </ul>
-        <AppButton>Press B to book intro call</AppButton>
+        <AppButton>Press <b>B</b> to book intro call</AppButton>
       </nav>
     </header>
   );
