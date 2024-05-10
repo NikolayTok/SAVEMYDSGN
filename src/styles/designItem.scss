@@ -1,0 +1,25 @@
+.design-items {
+    max-width: 567px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22.5px;
+
+    &__item {
+        padding: 13.5px;
+        width: 174px;
+        height: 172.5px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+
+        &__name {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.6px;
+        }
+    }
+}

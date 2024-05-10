@@ -1,0 +1,48 @@
+.section-design {
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 630px;
+    }
+
+    &__title {
+        width: 50%;
+        color: var(--text-color);
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -1.5px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        width: 70%;
+        margin-bottom: 47px;
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.6px;
+        line-height: 1.2;
+    }
+
+    & button {
+        display: flex;
+        padding: 0 31px;
+        justify-content: space-between;
+        align-items: center;
+        width: 244px;
+        height: 58px;
+        background-color: black;
+        color: var(--text-color-secondary);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -1%;
+        border-radius: 8px;
+        border: none;
+    }
+}
