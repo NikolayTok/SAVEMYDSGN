@@ -1,7 +1,4 @@
-.process {
-    margin-top: 160px;
-    padding: 0 24px;
-
+.stages {
     &__block {
         position: relative;
         background-color: var(--secondary-color);
@@ -10,26 +7,17 @@
         max-width: 1392px;
         margin: 0 auto;
         overflow: hidden;
-    }
-    &__block::before{ 
-        content: "";
-        width: 1394.88px;
-        height: 225.38px;
-        background-image: url(/images/gallery/process/graphic-element1.svg);
-        background-size: cover;
+        background-image: url(/images/gallery/stages/graphic-element.svg);
         background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
+        background-size: contain;
     }
-    
-    &__title-box{
+
+    &__title-box {
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 25px;
         vertical-align: middle;
-       
     }
 
     &__title {
@@ -56,6 +44,5 @@
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
-
     }
 }
