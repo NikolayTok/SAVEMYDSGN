@@ -1,8 +1,10 @@
 import React from "react";
-import "../styles/home.scss";
 
 import Gallery from "@/components/Gallery";
 import CustomButton from "@/components/CustomButton";
+import Creation from "@/components/Creation";
+
+import "../styles/home.scss";
 
 const Home = () => {
     return (
@@ -23,30 +25,7 @@ const Home = () => {
                     onClick={() => console.log("Button clicked")}
                 />
             </div>
-            <div className="hero__button">
-                <CustomButton
-                    width="77px"
-                    height="40px"
-                    color="#660000"
-                    buttonText="Web3.0"
-                    onClick={() => console.log("Button clicked")}
-                />
-                <CustomButton
-                    width="105px"
-                    height="40px"
-                    color="#003333"
-                    buttonText="mobile app"
-                    onClick={() => console.log("Button clicked")}
-                />
-                <CustomButton
-                    width="42px"
-                    height="40px"
-                    color="#000066"
-                    buttonText="ux"
-                    onClick={() => console.log("Button clicked")}
-                />
-            </div>
-
+            <Creation/>
         </section>
     );
 };
