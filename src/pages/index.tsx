@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/home.scss";
-
-import Gallery from "@/components/Gallery";
 import Design from "@/components/Design";
+import Gallery from '@/components/Gallery';
+import Stages from '@/components/Stages';
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
       </span>
       <Gallery />
       <Design />
+      <Stages />
     </section>
   );
 };

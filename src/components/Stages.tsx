@@ -1,57 +1,54 @@
 import React from "react";
-import ProcessItem from "./processItem";
+import StagesItem from "./StagesItem";
 
-import "../styles/process.scss";
+import "../styles/stages.scss";
 
-const Process = () => {
+
+const Stages = () => {
     return (
-        <div className="stages">
+        <section className="stages">
             <div className="stages__block">
                 <div className="stages__title-box">
                     <h2 className="stages__title">
-                        You ideas</h2>
-                    <img
-                        src="/images/gallery/icons/icon-light.svg"
-                        alt="icon"
-                    />
-                    <h2 className="stages__title">
-                        our designs</h2>
-                        <img
+                        You ideas<span><img
+                            src="/images/gallery/icons/icon-light.svg"
+                            alt="icon"
+                        /></span>our designs<span><img
                             src="/images/gallery/icons/icon-diamond.svg"
                             alt="icon"
-                        />
-                    
+                        /></span></h2>
                 </div>
                 <h3 className="stages__sub-title">
                     Navigating the creative stages
                 </h3>
                 <div className="stages__list">
-                    <ProcessItem
-                        image="/images/gallery/stages/img2.jpg"
+                    <StagesItem
+                        image="/images/gallery/stages/design-magic.jpg"
                         icon="/images/gallery/icons/icon-step1.svg"
                         title="Let design magic flow"
                         text="Join by subscribing to a plan and unleash unlimited design magic specifically tailored just for you"
                     />
-                    <ProcessItem
-                        image="/images/gallery/stages/img1.jpg"
+                    <StagesItem
+                        image="/images/gallery/stages/fast-designs.jpg"
                         icon="/images/gallery/icons/icon-step2.svg"
                         title="Fast designs, mon->Fri"
                         text="Expect your masterpiece in a few 
                         business days, Mon-Fri – as quick 
                         as a creative breeze."
                     />
-                    <ProcessItem
-                        image="/images/gallery/stages/img3.jpg"
+                    <StagesItem
+                        image="/images/gallery/stages/high-quality.jpg"
                         icon="/images/gallery/icons/icon-step3.svg"
                         title="Expect high quality output"
                         text="Let's collaborate to refine your designs 
                         until they mirror your unique vision, all 
                         backed by our guarantee."
                     />
+
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Process;
+export default Stages;
