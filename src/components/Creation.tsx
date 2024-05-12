@@ -5,47 +5,47 @@ import "../styles/creation.scss";
 
 const Creation = () => {
 
-    const creationItemProps = [
+    const creationItems = [
         {
-            image: '/images/gallery/fon.png',
+            image: '/images/gallery/background-graphic.png',
             progect: 'Dressx.',
             discr: 'Rethinking UI for Digital Metaverse',
         },
         {
-            image: '/images/gallery/fon.png',
+            image: '/images/gallery/background-graphic.png',
             progect: 'Dressx.',
             discr: 'Rethinking UI for Digital Metaverse'
         },
         {
-            image: '/images/gallery/fon.png',
+            image: '/images/gallery/background-graphic.png',
             progect: 'Dressx.',
             discr: 'Rethinking UI for Digital Metaverse'
         },
         {
-            image: '/images/gallery/fon.png',
+            image: '/images/gallery/background-graphic.png',
             progect: 'Dressx.',
             discr: 'Rethinking UI for Digital Metaverse'
         },
         {
-            image: '/images/gallery/fon.png',
+            image: '/images/gallery/background-graphic.png',
             progect: 'Dressx.',
             discr: 'Rethinking UI for Digital Metaverse'
         }
     ]
     return (
-        <div className="section-creation">
+        <section className="creation">
             <div className="container">
-                <div className="section-creation__block">
-                    <h2 className="section-creation__title-black">From Concept to Creation:<br></br><span className="section-creation__title-grey">
+                <div className="creation__block">
+                    <h2 className="creation__title-black">From Concept to Creation:<br></br><span className="creation__title-grey">
                         full-Spectrum Creativity in One Place.</span>
                     </h2>
-                    <div className="section-creation__gallery">
-                        <CreationItem items={creationItemProps} />
+                    <div className="creation__gallery">
+                        <CreationItem items={creationItems} />
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 
