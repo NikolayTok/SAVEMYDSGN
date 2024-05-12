@@ -27,6 +27,8 @@
         text-align: center;
         letter-spacing: -3%;
         line-height: 1.2;
+        display: flex;
+        column-gap: 24px;
     }
 
     &__sub-title {
