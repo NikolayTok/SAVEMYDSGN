@@ -1,0 +1,32 @@
+.design {
+  line-height: 1.2;
+  color: var(--text-color);
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 315px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 440px;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .app-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
