@@ -1,50 +1,44 @@
 .stages {
-    &__block {
-        position: relative;
-        background-color: var(--secondary-color);
-        border-radius: 60px;
-        padding: 160px 56px 176px;
-        max-width: 1392px;
-        margin: 0 auto;
-        overflow: hidden;
-        background-image: url(/images/gallery/stages/graphic-element.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+  line-height: 1.2;
 
-    &__title-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 25px;
-        vertical-align: middle;
-    }
+  &__wrapper {
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 60px;
+    padding: 160px 56px 176px;
+    max-width: 1392px;
+    margin: 0 auto;
+    background-image: url(/images/stages/graphic-element.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-    &__title {
-        color: var(--text-color-white);
-        font-size: 56px;
-        font-weight: 500;
-        text-align: center;
-        letter-spacing: -3%;
-        line-height: 1.2;
-        display: flex;
-        column-gap: 24px;
-    }
+  &__title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__sub-title {
-        color: var(--text-color-gray);
-        font-size: 36px;
-        font-weight: 400;
-        text-align: center;
-        color: #868787;
-        letter-spacing: -2%;
-        line-height: 1.2;
-        margin-bottom: 80px;
-    }
+  &__title {
+    color: var(--text-color-white);
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    column-gap: 24px;
+  }
 
-    &__list {
-        display: flex;
-        gap: 25px;
-        flex-wrap: wrap;
-    }
+  &__sub-title {
+    color: var(--text-color-gray);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
 }
