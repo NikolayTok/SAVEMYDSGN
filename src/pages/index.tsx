@@ -3,6 +3,7 @@ import "../styles/home.scss";
 import Design from "@/components/Design";
 import Gallery from '@/components/Gallery';
 import Stages from '@/components/Stages';
+import Creation from "@/components/Creation";
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
         Your monthly pass to design joy
       </span>
       <Gallery />
-      <Design />
       <Stages />
+      <Creation/>
+      <Design />
     </section>
   );
 };
