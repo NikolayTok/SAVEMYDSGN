@@ -1,31 +1,29 @@
+import Image from "next/image";
 import "../styles/designItem.scss";
 
 interface DesignItemProps {
-    image: string;
-    icon: string;
-    caption: string;
+  image: string;
+  icon: string;
+  caption: string;
 }
 
-const DesignItem: React.FC<{ items: DesignItemProps[] }> = ({ items }) => {
-    return (
-        <div className="design-items">
-            {items.map((item, index) => (
-                <div
-                    key={index}
-                    className="design-items__item"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                >
-                    <span className="design-item__icon">
-                        <img
-                            src={item.icon}
-                            alt="icon"
-                        />
-                    </span>
-                    <p className="design-item__name">{item.caption}</p>
-                </div>
-            ))}
-        </div>
-    );
+const DesignItem = ({ image, icon, caption }: DesignItemProps) => {
+  return (
+    <div
+      className="design-item"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <span className="design-item__icon">
+        <Image
+          src={icon}
+          alt={caption}
+          width={18}
+          height={18}
+        />
+      </span>
+      <p className="design-item__name">{caption}</p>
+    </div>
+  );
 };
 
 export default DesignItem;
