@@ -1,5 +1,4 @@
 import CreationItem from "./CreationItem";
-
 import "../styles/creation.scss";
 
 const Creation = () => {
@@ -31,6 +30,7 @@ const Creation = () => {
             discr: 'Rethinking UI for Digital Metaverse'
         }
     ]
+
     return (
         <section className="creation">
             <div className="container">

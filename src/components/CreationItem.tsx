@@ -1,4 +1,5 @@
 import AppButton from "./AppButton";
+import Image from "next/image";
 
 import "../styles/creationItem.scss";
 
@@ -26,7 +27,13 @@ const CreationItem: React.FC<{ items: CreationItemprops[] }> = ({ items }) => {
                         </span>
                     </p>
                     <div className="gallery-item__img-box">
-                        <img src={item.image} alt={item.progect} />
+                        {/* <img src={item.image} alt={item.progect} /> dont use this img use Image instead */}
+                        <Image
+                            width={628}
+                            height={628}
+                            src={item.image}
+                            alt={item.progect}
+                        />
                     </div>
                 </div>
             ))}
