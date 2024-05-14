@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/home.scss";
 import Design from "@/components/Design";
 import Gallery from '@/components/Gallery';
 import Stages from '@/components/Stages';
 import Creation from "@/components/Creation";
+import BookDemo from "@/components/BookDemo";
 
 const Home = () => {
   return (
@@ -18,6 +18,7 @@ const Home = () => {
       <Stages />
       <Creation/>
       <Design />
+      <BookDemo />
     </section>
   );
 };
