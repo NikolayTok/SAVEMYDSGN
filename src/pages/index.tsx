@@ -4,6 +4,7 @@ import Gallery from '@/components/Gallery';
 import Stages from '@/components/Stages';
 import Creation from "@/components/Creation";
 import BookDemo from "@/components/BookDemo";
+import Faqs from "@/components/Faqs";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Creation/>
       <Design />
       <BookDemo />
+      <Faqs />
     </section>
   );
 };
