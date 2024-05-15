@@ -1,13 +1,12 @@
 import Image from "../../node_modules/next/image";
 import Link from "../../node_modules/next/link";
-
 import "../styles/footer.scss";
 
 const Footer = () => {
 	return (
 		<footer className='footer'>
 			<div className='footer__wrapper'>
-				<div className='footer__wrapper-left'>
+				<nav className='footer__navigation'>
 					<Image
 						src='/images/icons/logo-snowflake.svg'
 						alt='logo snowflake'
@@ -29,7 +28,7 @@ const Footer = () => {
 							<Link href='/'>Resources</Link>
 						</li>
 					</ul>
-				</div>
+				</nav>
 				<ul className='footer__social'>
 					<li className='footer__social-item'>
 						<Link href='/'>

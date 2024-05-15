@@ -10,23 +10,27 @@
 		padding: 0 27px;
 		display: flex;
 		justify-content: space-between;
-		&-left {
-			display: flex;
-		}
 	}
+
+	&__navigation {
+		display: flex;
+	}
+
 	&__list {
-		font-size: 16.2px;
+		font-size: 16px;
 		color: var(--text-color-secondary);
 		opacity: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		grid-gap: 36px;
-		margin-left: 82.8px;
+		margin-left: 83px;
 	}
+
 	&__social {
 		display: flex;
 	}
+
 	&__social-item {
 		width: 36px;
 		height: 36px;
