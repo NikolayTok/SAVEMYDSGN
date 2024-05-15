@@ -1,35 +1,40 @@
 .book-demo {
-	margin-top: 100px;
-	&__wrapper {
-		max-width: 1280px;
-		height: 470px;
-		margin: 0 auto;
+  margin-top: 100px;
+
+  &__wrapper {
+    max-width: 1280px;
+    height: 470px;
+    margin: 0 auto;
     border-radius: 32px;
-		background-image: url(/images/background-bookDemo.jpg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-		padding: 104px 0 0 77px;
-	}
-	&__content {
-		max-width: 725px;
-		height: auto;
-	}
-	&__title {
-		font-size: 56px;
-		color: var(--text-color-secondary);
-		margin-bottom: 52.8px;
-	}
-	&__btn {
-		background-color: var(--background-color);
-		color: var(--text-color);
-		font-size: 25.6px;
-		line-height: 1.2;
-		padding: 16px 55px;
-		&:hover {
-			background-color: var(--background-color-secondary);
-			color: var(--text-color-secondary);
-			border-color: var(--text-color-secondary);
-		}
-	}
+    background-image: url(/images/background-bookDemo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 104px 0 0 77px;
+  }
+
+  &__content {
+    max-width: 725px;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 56px;
+    color: var(--text-color-secondary);
+    margin-bottom: 53px;
+  }
+
+  &__btn {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 16px 55px;
+
+    &:hover {
+      background-color: var(--background-color-secondary);
+      color: var(--text-color-secondary);
+      border-color: var(--text-color-secondary);
+    }
+  }
 }

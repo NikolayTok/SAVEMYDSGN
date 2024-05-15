@@ -1,5 +1,4 @@
 import AppButton from "./AppButton";
-
 import "../styles/bookDemo.scss";
 
 const BookDemo = () => {
