@@ -35,8 +35,8 @@ const Footer = () => {
 							<Image
 								src='/images/icons/twitter.svg'
 								alt='logo snowflake'
-								width={21.6}
-								height={21.6}
+								width={22}
+								height={22}
 								className='footer__icon'
 							/>
 						</Link>
@@ -46,8 +46,8 @@ const Footer = () => {
 							<Image
 								src='/images/icons/instagram.svg'
 								alt='logo snowflake'
-								width={21.6}
-								height={21.6}
+								width={22}
+								height={22}
 								className='footer__icon'
 							/>
 						</Link>
@@ -57,8 +57,8 @@ const Footer = () => {
 							<Image
 								src='/images/icons/facebook.svg'
 								alt='logo snowflake'
-								width={21.6}
-								height={21.6}
+								width={22}
+								height={22}
 								className='footer__icon'
 							/>
 						</Link>
