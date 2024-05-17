@@ -31,4 +31,5 @@ const CreationItem = ({ image, project, description }: CreationItemProps) => {
     </div>
   );
 };
+
 export default CreationItem;
