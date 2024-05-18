@@ -5,6 +5,7 @@ import Stages from '@/components/Stages';
 import Creation from "@/components/Creation";
 import BookDemo from "@/components/BookDemo";
 import Faqs from "@/components/Faqs";
+import Pricing from "@/components/Pricing";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Creation/>
       <Design />
       <BookDemo />
+      <Pricing />
       <Faqs />
     </section>
   );
