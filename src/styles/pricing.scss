@@ -1,0 +1,10 @@
+.pricing {
+	color: var(--text-color);
+	line-height: 1.2;
+
+	&__title {
+		font-size: 48px;
+		width: 468px;
+		margin-bottom: 64px;
+	}
+}

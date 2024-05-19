@@ -16,11 +16,13 @@ const Pricing: React.FC = () => {
 				"Unlimited stock images",
 				"Updates delivered every 48 hours",
 			],
+			color: "#F1F1F1",
+			textColor: "#000",
+			borderColor: "#F1F1F1",
 		},
-    {
+		{
 			title: "Retainer",
-			description:
-				"Ideal for those who need an ongoing design support.",
+			description: "Ideal for those who need an ongoing design support.",
 			cost: "$2,990",
 			services: [
 				"2x revisions",
@@ -30,11 +32,15 @@ const Pricing: React.FC = () => {
 				"Unlimited stock images",
 				"Updates delivered every 48 hours",
 			],
+			color: "#000",
+			textColor: "#fff",
+			borderColor: "#000",
+			buttonColor: "#AFFF2C",
+			svgColor: "black",
 		},
-    {
+		{
 			title: "7-days trial",
-			description:
-				"Unlimited team members",
+			description: "Unlimited team members",
 			cost: "Custom",
 			services: [
 				"2x revisions",
@@ -44,13 +50,17 @@ const Pricing: React.FC = () => {
 				"Unlimited stock images",
 				"Updates delivered every 48 hours",
 			],
+			color: "#fff",
+			textColor: "#000",
+			borderColor: "#E2E3E6",
 		},
 	];
+  
 	return (
 		<section className='pricing'>
 			<div className='container'>
 				<h2 className='pricing__title'>Choose a plan that’s right for you</h2>
-				<PricingCards tariffs={tariffs}/>
+				<PricingCards tariffs={tariffs} />
 			</div>
 		</section>
 	);

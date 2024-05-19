@@ -7,6 +7,11 @@ interface PricingCardsProps {
 		description: string;
 		cost: string;
 		services: string[];
+		color: string;
+		textColor: string;
+    borderColor: string;
+		buttonColor?: string;
+    svgColor?: string;
 	}[];
 }
 
@@ -20,6 +25,11 @@ const PricingCards: React.FC<PricingCardsProps> = ({ tariffs }) => {
 					description={tariff.description}
 					cost={tariff.cost}
 					services={tariff.services}
+					color={tariff.color}
+					textColor={tariff.textColor}
+					buttonColor={tariff.buttonColor}
+					borderColor={tariff.borderColor}
+					svgColor={tariff.svgColor}
 				/>
 			))}
 		</div>
