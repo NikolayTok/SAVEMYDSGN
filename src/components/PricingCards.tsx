@@ -17,6 +17,7 @@ const PricingCards: React.FC<PricingCardsProps> = ({ tariffs }) => {
 			{tariffs.map((tariff, index) => (
 				<PricingCard
 					key={index}
+					]as[dfsadf]
 					title={tariff.title}
 					description={tariff.description}
 					cost={tariff.cost}
