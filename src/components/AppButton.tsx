@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React from "react";
 import "../styles/app-button.scss";
 
 type AppButtonProps = {
@@ -19,7 +19,6 @@ const AppButton = ({
 			className={`app-button ${className}`}
 			onClick={onClick}
 			type={type}
-			aria-pressed='false'
 		>
 			{children}
 		</button>
