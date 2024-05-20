@@ -1,5 +1,5 @@
-import "../styles/pricing.scss";
 import PricingCards from "./PricingCards";
+import "../styles/pricing.scss";
 
 const Pricing: React.FC = () => {
 	const tariffs = [
@@ -16,43 +16,31 @@ const Pricing: React.FC = () => {
 				"Unlimited stock images",
 				"Updates delivered every 48 hours",
 			],
-			color: "#F1F1F1",
-			textColor: "#000",
-			borderColor: "#F1F1F1",
+			backgroundColor: "#F1F1F1",
 		},
 		{
 			title: "Retainer",
 			description: "Ideal for those who need an ongoing design support.",
 			cost: "$2,990",
 			services: [
-				"2x revisions",
-				"High-converting copy",
-				"Custom illustrations / graphics",
-				"46 slides top-tier branding",
-				"Unlimited stock images",
+				"One request at a time",
+				"Dedicated designer",
+				"Unlimited brands / users",
+				"Expert project management",
+				"Custom illustrations / stock images",
 				"Updates delivered every 48 hours",
 			],
-			color: "#000",
-			textColor: "#fff",
-			borderColor: "#000",
-			buttonColor: "#AFFF2C",
-			svgColor: "black",
+			backgroundColor: "#000",
 		},
 		{
 			title: "7-days trial",
 			description: "Unlimited team members",
 			cost: "Custom",
 			services: [
-				"2x revisions",
-				"High-converting copy",
-				"Custom illustrations / graphics",
-				"46 slides top-tier branding",
-				"Unlimited stock images",
-				"Updates delivered every 48 hours",
+				"Fixed scope of work",
+				"Daily project updates",
 			],
-			color: "#fff",
-			textColor: "#000",
-			borderColor: "#E2E3E6",
+			backgroundColor: "#fff",
 		},
 	];
   

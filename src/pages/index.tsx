@@ -6,6 +6,7 @@ import Creation from "@/components/Creation";
 import BookDemo from "@/components/BookDemo";
 import Faqs from "@/components/Faqs";
 import Pricing from "@/components/Pricing";
+import "../styles/home.scss";
 
 const Home = () => {
   return (
