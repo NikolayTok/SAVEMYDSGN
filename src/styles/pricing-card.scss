@@ -1,0 +1,82 @@
+.pricing-card {
+	&:nth-child(2) {
+		.app-button {
+			background-color: #AFFF2C;
+			border-color: #AFFF2C;
+
+			path {
+				fill: #000
+			}
+
+			&:hover {
+				background-color: #000;
+
+				path {
+					fill: #fff
+				}
+			}
+		}
+
+		.pricing-card__tariff-card {
+			border: 1px solid #000;
+			color: #fff;
+		}
+	}
+
+	&__tariff-card {
+		color: #000;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 410px;
+		height: 270px;
+		padding: 20px;
+		border-radius: 16px;
+		margin-bottom: 42px;
+		border: 1px solid #E2E3E6;
+	}
+
+	&__tariff-title {
+		font-size: 36px;
+		margin-bottom: 8px;
+	}
+
+	&__tariff-description {
+		font-size: 15px;
+		opacity: 0.5;
+	}
+
+	&__tariff-box-bottom {
+		display: flex;
+		justify-content: space-between;
+
+		.app-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:hover path {
+				fill: #000;
+			}
+		}
+	}
+
+	&__tariff-cost {
+		font-size: 40px;
+	}
+
+	&__services-list {
+		display: flex;
+		flex-direction: column;
+		gap: 13px;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	&__service-item {
+		display: flex;
+		align-items: center;
+	}
+}
