@@ -1,5 +1,5 @@
 import AppButton from "./AppButton";
-import "../styles/bookDemo.scss";
+import "../styles/book-demo.scss";
 
 const BookDemo = () => {
 	return (

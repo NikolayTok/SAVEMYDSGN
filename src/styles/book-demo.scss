@@ -1,5 +1,6 @@
 .book-demo {
   margin-top: 100px;
+  line-height: 1.2;
 
   &__wrapper {
     max-width: 1280px;
@@ -10,12 +11,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 104px 0 0 77px;
+    padding: 104px 77px;
   }
 
   &__content {
     max-width: 725px;
-    height: auto;
   }
 
   &__title {
@@ -28,7 +28,6 @@
     background-color: var(--background-color);
     color: var(--text-color);
     font-size: 26px;
-    line-height: 1.2;
     padding: 16px 55px;
 
     &:hover {
