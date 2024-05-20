@@ -1,0 +1,23 @@
+.faqs {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    flex-wrap: wrap;
+    color: var(--text-color);
+    line-height: 1.2;
+  }
+
+  &__content {
+    width: 40%;
+  }
+
+  &__title {
+    font-size: 48px;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin: 24px 0 30px;
+  }
+}
