@@ -14,12 +14,12 @@
 	&__answer {
 		overflow: hidden;
 		max-height: 0;
-		transition: max-height 1.4s ease-out;
+		transition: max-height .5s ease-out;
 	}
 
 	&__answer.open {
 		max-height: 200px;
-		animation: fade 1s ease-in-out;
+		animation: fade .5s ease-in-out;
 	}
 
 	&__answer p {
@@ -39,7 +39,7 @@
 	&__icon-plus,
 	&__icon-minus {
 		position: absolute;
-		transition: opacity 0.5s;
+		transition: opacity .5s;
 	}
 
 	&__icon-plus {

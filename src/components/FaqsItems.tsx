@@ -2,12 +2,12 @@ import "../styles/faqs-items.scss";
 import FaqsItem from "./FaqsItem";
 import { useState } from "react";
 
-interface FaqsItemsprops {
+interface FaqsItemsProps {
 	question: string;
 	answer: string;
 }
 
-const FaqsItems: React.FC<{ items: FaqsItemsprops[] }> = ({ items }) => {
+const FaqsItems: React.FC<{ items: FaqsItemsProps[] }> = ({ items }) => {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
 	const handleToggle = (index: number) => {
