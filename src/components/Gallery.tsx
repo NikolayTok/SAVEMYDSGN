@@ -2,7 +2,7 @@ import ImgBlock from "./ImgBlock";
 import "../styles/gallery.scss";
 
 const Gallery = () => {
-  const imagesTop = [
+  const images = [
     "/images/gallery/1.jpg",
     "/images/gallery/2.jpg",
     "/images/gallery/1.jpg",
@@ -13,9 +13,9 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <div className="gallery-top">
-        <ImgBlock images={imagesTop} />
-        <ImgBlock reverse images={imagesTop} />
+      <div className="gallery__content">
+        <ImgBlock images={images} />
+        <ImgBlock reverse images={images} />
       </div>
     </div>
   );

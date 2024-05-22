@@ -16,5 +16,34 @@
     display: block;
     font-weight: 300;
     margin-bottom: 80px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 35px;
+      margin: 0 auto 15px;
+    }
+  
+    &__sub-title {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    &__title {
+      font-size: 30px;
+    }
+  
+    &__sub-title {
+      font-size: 14px;
+    }
   }
 }
