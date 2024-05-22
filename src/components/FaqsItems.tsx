@@ -1,6 +1,7 @@
-import "../styles/faqs-items.scss";
 import FaqsItem from "./FaqsItem";
 import { useState } from "react";
+
+import "../styles/faqs-items.scss";
 
 interface FaqsItemsProps {
 	question: string;

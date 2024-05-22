@@ -1,5 +1,6 @@
 import AppButton from "./AppButton";
 import FaqsItems from "./FaqsItems";
+
 import "../styles/faqs.scss";
 
 const Faqs = () => {

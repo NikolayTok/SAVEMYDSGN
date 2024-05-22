@@ -1,4 +1,5 @@
 import DesignItem from "./DesignItem";
+
 import "../styles/designItems.scss";
 
 interface DesignItemsProps {

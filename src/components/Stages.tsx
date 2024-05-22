@@ -1,5 +1,6 @@
 import React from "react";
 import StagesItem from "./StagesItem";
+
 import "../styles/stages.scss";
 
 const Stages = () => {

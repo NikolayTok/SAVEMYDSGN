@@ -1,12 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
-import '../styles/header.scss';
 import AppButton from './AppButton';
 
+import '../styles/header.scss';
+
 const Header = () => {
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const [directionUp, setDirectionUp] = useState(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY
+      if (currentScroll > lastScrollY) {
+        setDirectionUp(false)
+      } else if (currentScroll < lastScrollY) {
+        setDirectionUp(true)
+      }
+      setLastScrollY(currentScroll)
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+  console.log(directionUp)
+
   return (
-    <header className='header'>
+    <header className={directionUp ? 'header' : ' header header-fixed'}>
       <nav className='header__navigation'>
         <Image
           src='/images/logo/logo.svg'
@@ -18,13 +42,13 @@ const Header = () => {
         <ul className='header__list'>
           <li className='header__list-item'>
             <Link href="/">Home</Link>
-            </li>
+          </li>
           <li className='header__list-item'>
             <Link href="/about">About</Link>
-            </li>
+          </li>
           <li className='header__list-item'>
             <Link href="/contact">Contact</Link>
-            </li>
+          </li>
         </ul>
         <AppButton>Press <b>B</b> to book intro call</AppButton>
       </nav>

@@ -1,5 +1,6 @@
 import Image from "../../node_modules/next/image";
 import Link from "../../node_modules/next/link";
+
 import "../styles/footer.scss";
 
 const Footer = () => {

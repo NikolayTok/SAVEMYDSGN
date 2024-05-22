@@ -1,6 +1,7 @@
 import React from "react";
-import "../styles/stages-item.scss";
 import Image from "next/image";
+
+import "../styles/stages-item.scss";
 
 interface StagesItemProps {
   image: string;

@@ -1,4 +1,6 @@
 import ImgBlock from "./ImgBlock";
+import AppButton from "./AppButton";
+
 import "../styles/gallery.scss";
 
 const Gallery = () => {
@@ -17,6 +19,9 @@ const Gallery = () => {
         <ImgBlock images={images} />
         <ImgBlock reverse images={images} />
       </div>
+      <AppButton>
+        Book a FREE strategy call
+      </AppButton>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import DesignItems from "./DesignItems";
 import AppButton from "./AppButton";
+
 import "../styles/design.scss";
 
 const Design = () => {

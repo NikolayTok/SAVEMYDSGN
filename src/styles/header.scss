@@ -1,6 +1,10 @@
 @import './colors.scss';
 
 .header {
+  position: fixed;
+  top: 24px;
+  right: 50%;
+  transform: translateX(50%);
   max-width: 842px;
   width: 100%;
   padding: 10px 24px;
@@ -8,6 +12,9 @@
   margin: 0 auto;
   border-radius: 12px;
   border: 1px solid #E0E0E0;
+  z-index: 1000;
+  opacity: 1;
+  transition: top .1s;
 
   &__navigation {
     display: flex;
@@ -19,4 +26,9 @@
     display: flex;
     gap: 50px;
   }
+}
+
+.header-fixed {
+  top: 0;
+  opacity: .8;
 }

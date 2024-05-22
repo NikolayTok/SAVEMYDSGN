@@ -1,4 +1,5 @@
 import PricingCards from "./PricingCards";
+
 import "../styles/pricing.scss";
 
 const Pricing: React.FC = () => {

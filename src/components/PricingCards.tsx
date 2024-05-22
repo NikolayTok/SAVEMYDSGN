@@ -1,5 +1,6 @@
-import "../styles/pricing-cards.scss";
 import PricingCard from "./PricingCard";
+
+import "../styles/pricing-cards.scss";
 
 interface PricingCardsProps {
 	tariffs: {

@@ -1,5 +1,6 @@
-import "../styles/pricing-card.scss";
 import AppButton from "./AppButton";
+
+import "../styles/pricing-card.scss";
 
 interface PricingCardProps {
 	title: string;

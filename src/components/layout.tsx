@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+
 import "../styles/globals.scss";
 
 const Layout = ({ children }: any) => {
 	return (
-		<div>
+		<div className="layout">
 			<Header />
 			<main>{children}</main>
 			<Footer />
