@@ -65,21 +65,17 @@ const Stages = () => {
               image="/images/stages/fast-designs.jpg"
               icon="/images/icons/icon-step2.svg"
               title="Fast designs, mon->Fri"
-              text="Expect your masterpiece in a few 
-                        business days, Mon-Fri – as quick 
-                        as a creative breeze."
+              text="Expect your masterpiece in a few  business days, Mon-Fri – as quick as a creative breeze."
             />
             <StagesItem
               image="/images/stages/high-quality.jpg"
               icon="/images/icons/icon-step3.svg"
               title="Expect high quality output"
-              text="Let's collaborate to refine your designs 
-                        until they mirror your unique vision, all 
-                        backed by our guarantee."
+              text="Let's collaborate to refine your designs until they mirror your unique vision, allbacked by our guarantee."
             />
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   );
 };
