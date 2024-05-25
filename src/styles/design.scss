@@ -1,36 +1,98 @@
 .design {
-  line-height: 1.2;
-  color: var(--text-color);
+	line-height: 1.2;
+	color: var(--text-color);
 
-  &__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 40px;
+	}
 
-  &__title {
-    max-width: 315px;
-    width: 100%;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 24px;
-  }
+	&__title {
+		max-width: 315px;
+		width: 100%;
+		font-size: 40px;
+		margin-bottom: 24px;
+	}
 
-  &__text {
-    max-width: 440px;
-    width: 100%;
-    margin-bottom: 50px;
-    font-size: 20px;
-    font-weight: 400;
-  }
+	&__text {
+		max-width: 440px;
+		width: 100%;
+		margin-bottom: 50px;
+		font-size: 20px;
+	}
 
-  .app-button {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+	.app-button {
+		display: flex;
+		align-items: center;
+		gap: 20px;
 
-    &:hover path {
-      stroke: var(--text-color)
-    }
-  }
+		&:hover path {
+			stroke: var(--text-color);
+		}
+	}
+}
+
+@media (max-width: 1076px) {
+	.design {
+		&__box {
+			justify-content: center;
+		}
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&__title,
+		&__text {
+			max-width: 90%;
+		}
+	}
+}
+
+@media (max-width: 865px) {
+	.design {
+		&__title {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.design {
+		&__title {
+			font-size: 28px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.design {
+    &__title,
+		&__text {
+			max-width: 100%;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__text {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 345px) {
+	.design {
+		&__title {
+			font-size: 18px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
 }
