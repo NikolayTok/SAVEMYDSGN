@@ -28,30 +28,3 @@
     }
   }
 }
-
-@media (max-width: 560px) {
-  .creation {
-    &__title-black,
-    &__title-grey {
-      text-align: center;
-    }
-  }
-}
-
-@media (max-width: 505px) {
-  .creation {
-    &__title-black,
-    &__title-grey {
-      font-size: 20px;
-    }
-  }
-}
-
-@media (max-width: 345px) {
-  .creation {
-    &__title-black,
-    &__title-grey {
-      font-size: 18px;
-    }
-  }
-}
