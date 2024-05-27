@@ -1,10 +1,30 @@
 .pricing {
 	color: var(--text-color);
 	line-height: 1.2;
+	margin-top: 60px;
 
 	&__title {
 		font-size: 48px;
 		width: 468px;
 		margin-bottom: 64px;
+	}
+}
+
+@media (max-width: 450px) {
+	.pricing {
+		&__title {
+			font-size: 36px;
+			width: 291px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media (max-width: 340px) {
+	.pricing {
+		&__title {
+			font-size: 34px;
+			width: 281px;
+		}
 	}
 }
