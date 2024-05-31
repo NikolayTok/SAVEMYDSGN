@@ -47,6 +47,8 @@ const Faqs = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Suspendisse varius enim in eros elementum tristique.
 						</p>
+					</div>
+					<div className='faqs__button'>
 						<AppButton>Book a FREE strategy call</AppButton>
 					</div>
 					<FaqsItems items={faqsItems} />
