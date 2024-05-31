@@ -35,7 +35,7 @@ const Creation = () => {
 		<section className='creation'>
 			<div className='container'>
 				<div className='creation__block'>
-					<h2 className='creation__title-black'>
+					<h2 className='creation__title'>
 						From Concept to Creation:<br></br>
 						<span className='creation__title-grey'>
 							full-Spectrum Creativity in One Place.

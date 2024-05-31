@@ -7,13 +7,8 @@
 
 @media (max-width: 620px) {
 	.creation-items {
+		grid-template-columns: 1fr;
 		margin-top: 40px;
 		gap: 30px;
-	}
-}
-
-@media (max-width: 560px) {
-	.creation-items {
-		grid-template-columns: 1fr;
 	}
 }

@@ -47,22 +47,6 @@
 
 @media (max-width: 620px) {
 	.creation-item {
-		&__description {
-			font-size: 18px;
-		}
-
-		&__img-box {
-			margin-top: 10px;
-		}
-
-		&__btn-box {
-			margin-bottom: 10px;
-		}
-	}
-}
-
-@media (max-width: 560px) {
-	.creation-item {
 		&:first-child {
 			grid-column: 1/2;
 
@@ -73,6 +57,15 @@
 
 		&__description {
 			font-size: 16px;
+			margin-bottom: 24px;
+		}
+
+		&__img-box {
+			margin-top: 10px;
+		}
+
+		&__btn-box {
+			margin-bottom: 12px;
 		}
 	}
 }

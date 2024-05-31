@@ -1,30 +1,34 @@
 .creation {
-  line-height: 1.2;
+	line-height: 1.2;
 
-  &__title-black,
-  &__title-grey {
-    font-size: 50px;
-  }
+	&__title-black,
+	&__title-grey {
+		font-size: 50px;
+	}
 
-  &__title-grey {
-    opacity: 59%;
-  }
+	&__title-grey {
+		opacity: 59%;
+	}
 }
 
 @media (max-width: 865px) {
-  .creation {
-    &__title-black,
-    &__title-grey {
-      font-size: 36px;
-    }
-  }
+	.creation {
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__title,
+		&__title-grey {
+			font-size: 36px;
+		}
+	}
 }
 
 @media (max-width: 620px) {
-  .creation {
-    &__title-black,
-    &__title-grey {
-      font-size: 28px;
-    }
-  }
+	.creation {
+		&__title,
+		&__title-grey {
+			font-size: 28px;
+		}
+	}
 }
