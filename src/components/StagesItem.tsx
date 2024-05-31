@@ -25,13 +25,13 @@ const StagesItem = ({ image, title, text, icon }: StagesItemProps) => {
 			<div className='stages-item__info'>
 				<div className='stages-item__info-top'>
 					<Image
-						className='stages-item__info-top_icon'
+						className='stages-item__info-icon'
 						width={60}
 						height={60}
 						src={icon}
 						alt='icon'
 					/>
-					<h3 className='stages-item__info-top_title'>{title}</h3>
+					<h3 className='stages-item__info-title'>{title}</h3>
 				</div>
 				<p className='stages-item__info-text'>{text}</p>
 			</div>

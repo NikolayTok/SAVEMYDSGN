@@ -9,7 +9,7 @@ const Stages = () => {
         <div className="stages__wrapper">
           <div className="stages__title-box">
             <h2 className="stages__title  title">
-              You ideas<span className="stages__title__span-idea">
+              You ideas<span className="stages__idea">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_b_1_265)">
                     <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.1" />
@@ -39,7 +39,7 @@ const Stages = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </span> our designs<span className="stages__title__span-design">
+              </span> our designs<span className="stages__design">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.1" />
                   <circle cx="32" cy="32" r="31.5" stroke="white" strokeOpacity="0.12" />
@@ -50,7 +50,7 @@ const Stages = () => {
               </span>
             </h2>
           </div>
-          <p className="stages__sub-title subtitle">
+          <p className="stages__sub-title">
             Navigating the creative stages
           </p>
           <div className="stages__list">
