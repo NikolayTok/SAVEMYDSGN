@@ -1,5 +1,5 @@
 .design-items {
-  max-width: 578px;
+	max-width: 578px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 22px;
@@ -8,6 +8,6 @@
 @media (max-width: 630px) {
 	.design-items {
 		grid-template-columns: repeat(2, 1fr);
-		gap: 15px;
+		gap: 12px;
 	}
 }

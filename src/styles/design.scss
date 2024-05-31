@@ -75,6 +75,15 @@
 			width: 100%;
 		}
 
+		&__title {
+			font-size: 36px;
+			margin-bottom: 16px;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+		}
+
 		&__button {
 			width: 100%;
 			order: 1;

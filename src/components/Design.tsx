@@ -45,7 +45,7 @@ const Design = () => {
 						<h2 className='design__title title'>
 							We do everything on web & mobile design
 						</h2>
-						<p className='design__subtitle subtitle'>
+						<p className='design__subtitle'>
 							From wireframes to final designs, we craft web and mobile
 							experiences that captivate and convert. Your vision, amplified by
 							our expertise, ready to make a lasting impact.
