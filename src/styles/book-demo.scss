@@ -4,7 +4,7 @@
 
   &__wrapper {
     max-width: 1280px;
-    height: 470px;
+    height: auto;
     margin: 0 auto;
     border-radius: 32px;
     background-image: url(/images/background-bookDemo.jpg);
@@ -49,7 +49,6 @@
 @media (max-width: 865px) {
   .book-demo {
     &__wrapper {
-      height: 390px;
       padding: 60px 45px;
     }
 
@@ -63,40 +62,19 @@
 @media (max-width: 600px) {
   .book-demo {
     &__wrapper {
-      padding: 48px 16px;
+      padding: 48px 22px;
     }
 
     &__title {
       text-align: center;
       font-size: 36px;
-      margin-bottom: 85px;
+      margin-bottom: 64px;
       width: 100%;
     }
 
     &__btn {
       width: 100%;
       font-size: 24px;
-    }
-  }
-}
-
-@media (max-width: 430px) {
-  .book-demo {
-    &__title {
-      margin-bottom: 55px;
-    }
-  }
-}
-
-@media (max-width: 362px) {
-  .book-demo {
-    &__title {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    &__btn {
-      font-size: 18px;
     }
   }
 }
