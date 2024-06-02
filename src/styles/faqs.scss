@@ -1,23 +1,56 @@
 .faqs {
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
-    flex-wrap: wrap;
+    display: grid;
+    column-gap: 48px;
+    row-gap: 32px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30% 70%;
     color: var(--text-color);
     line-height: 1.2;
   }
 
   &__content {
-    width: 40%;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   &__title {
     font-size: 48px;
+    margin-bottom: 24px;
   }
 
   &__text {
     font-size: 18px;
-    margin: 24px 0 30px;
+    color: #444444;
+  }
+
+  &__button {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    order: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .faqs {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title{
+      margin-bottom: 16px;
+    }
+
+    &__text{
+      font-size: 16px;
+    }
+
+    &__button {
+      width: 100%;
+    }
+
+    .app-button {
+      width: 100%;
+    }
   }
 }
