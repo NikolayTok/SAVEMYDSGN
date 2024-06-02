@@ -1,6 +1,10 @@
 .creation {
 	line-height: 1.2;
 
+  &__title {
+    margin-bottom: 64px;
+  }
+
 	&__title,
 	&__title-grey {
 		font-size: 50px;
@@ -11,12 +15,16 @@
 	}
 }
 
+@media (max-width: 1000px) {
+	.creation {
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
 @media (max-width: 865px) {
 	.creation {
-		&__title {
-			margin-bottom: 40px;
-		}
-
 		&__title,
 		&__title-grey {
 			font-size: 36px;
