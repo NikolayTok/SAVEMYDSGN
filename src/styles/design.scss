@@ -4,14 +4,10 @@
 
 	&__box {
 		display: grid;
-		column-gap: 10px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 85% 15%;
 	}
 
 	&__info {
-		grid-column: 1/2;
-		grid-row: 1/2;
+		padding-right: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -20,8 +16,6 @@
 	&__button {
 		display: flex;
 		align-items: flex-end;
-		grid-column: 1/2;
-		grid-row: 2/3;
 	}
 
 	.design-items {
@@ -59,7 +53,7 @@
 		&__box {
 			display: flex;
 			flex-direction: column;
-			gap: 32px;
+			gap: 30px;
 			align-items: center;
 		}
 
@@ -74,17 +68,16 @@
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 630px) {
 	.design {
 		&__info {
-			order: 1;
 			text-align: start;
 			width: 100%;
 		}
 
 		&__button {
-			order: 3;
 			width: 100%;
+			order: 1;
 		}
 
 		.app-button {
@@ -94,7 +87,6 @@
 		}
 
 		.design-items {
-			order: 2;
 			width: 100%;
 		}
 	}
