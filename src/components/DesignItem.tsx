@@ -1,6 +1,6 @@
 import Image from "../../node_modules/next/image";
 
-import "../styles/designItem.scss";
+import "../styles/design-item.scss";
 
 interface DesignItemProps {
   image: string;

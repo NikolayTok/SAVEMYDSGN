@@ -1,7 +1,7 @@
 import Image from "../../node_modules/next/image";
 import AppButton from "./AppButton";
 
-import "../styles/creationItem.scss";
+import "../styles/creation-item.scss";
 
 interface CreationItemProps {
   image: string;
