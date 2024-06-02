@@ -48,7 +48,7 @@ const Pricing: React.FC = () => {
 	return (
 		<section className='pricing'>
 			<div className='container'>
-				<h2 className='pricing__title'>Choose a plan that’s right for you</h2>
+				<h2 className='pricing__title title'>Choose a plan that’s right for you</h2>
 				<PricingCards tariffs={tariffs} />
 			</div>
 		</section>
