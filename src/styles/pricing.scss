@@ -10,21 +10,21 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1330px) {
 	.pricing {
 		&__title {
-			font-size: 36px;
-			width: 291px;
+			text-align: center;
+			margin: 0 auto;
 			margin-bottom: 40px;
 		}
 	}
 }
 
-@media (max-width: 340px) {
+@media (max-width: 600px) {
 	.pricing {
 		&__title {
-			font-size: 34px;
-			width: 281px;
+			font-size: 36px;
+			width: 291px;
 		}
 	}
 }

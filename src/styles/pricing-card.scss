@@ -82,25 +82,11 @@
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 	.pricing-card {
 		&__tariff-card {
 			max-width: 327px;
 			height: 272px;
-		}
-	}
-}
-
-@media (max-width: 375px) {
-	.pricing-card {
-		&__tariff-card {
-			max-width: 297px;
-			height: 242px;
-			margin-bottom: 24px;
-		}
-
-		&__tariff-cost {
-			font-size: 36px;
 		}
 	}
 }
