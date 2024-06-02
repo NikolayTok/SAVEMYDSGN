@@ -7,7 +7,6 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
 			<div className='footer__wrapper'>
-				<nav className='footer__navigation'>
 					<Image
 						src='/images/icons/logo-snowflake.svg'
 						alt='logo snowflake'
@@ -15,6 +14,7 @@ const Footer = () => {
 						height={36}
 						className='footer__logo'
 					/>
+				<nav className='footer__navigation'>
 					<ul className='footer__list'>
 						<li className='footer__list-item'>
 							<Link href='/'>Terms of Service</Link>
