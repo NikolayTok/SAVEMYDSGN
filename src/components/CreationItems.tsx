@@ -1,6 +1,6 @@
 import CreationItem from "./CreationItem";
 
-import "../styles/creationItems.scss";
+import "../styles/creation-items.scss";
 
 interface CreationItemProps {
 	image: string;

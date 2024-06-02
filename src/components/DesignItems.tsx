@@ -1,6 +1,6 @@
 import DesignItem from "./DesignItem";
 
-import "../styles/designItems.scss";
+import "../styles/design-items.scss";
 
 interface DesignItemsProps {
   image: string;
