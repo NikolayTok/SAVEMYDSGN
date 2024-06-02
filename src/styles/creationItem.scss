@@ -3,7 +3,8 @@
 		grid-column: 1/3;
 
 		img {
-			height: 540px;
+			height: auto;
+			aspect-ratio: 1242 / 540;
 		}
 	}
 
@@ -32,12 +33,39 @@
 		margin-top: 40px;
 		max-width: 100%;
 		overflow: hidden;
+		position: relative;
 
 		img {
 			display: block;
 			object-fit: cover;
 			width: 100%;
-			height: 628px;
+			height: auto;
+			aspect-ratio: 628 / 628;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.creation-item {
+		&:first-child {
+			grid-column: 1/2;
+
+			img {
+				aspect-ratio: 628 / 628;
+			}
+		}
+
+		&__description {
+			font-size: 16px;
+			margin-bottom: 24px;
+		}
+
+		&__img-box {
+			margin-top: 10px;
+		}
+
+		&__btn-box {
+			margin-bottom: 12px;
 		}
 	}
 }
