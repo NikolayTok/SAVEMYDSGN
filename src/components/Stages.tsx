@@ -6,11 +6,10 @@ import "../styles/stages.scss";
 const Stages = () => {
   return (
     <section className="stages">
-      <div className="container">
         <div className="stages__wrapper">
           <div className="stages__title-box">
-            <h2 className="stages__title">
-              You ideas<span>
+            <h2 className="stages__title  title">
+              You ideas<span className="stages__idea">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_b_1_265)">
                     <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.1" />
@@ -40,7 +39,7 @@ const Stages = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </span>our designs<span>
+              </span> our designs<span className="stages__design">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="32" cy="32" r="32" fill="white" fillOpacity="0.1" />
                   <circle cx="32" cy="32" r="31.5" stroke="white" strokeOpacity="0.12" />
@@ -65,21 +64,16 @@ const Stages = () => {
               image="/images/stages/fast-designs.jpg"
               icon="/images/icons/icon-step2.svg"
               title="Fast designs, mon->Fri"
-              text="Expect your masterpiece in a few 
-                        business days, Mon-Fri – as quick 
-                        as a creative breeze."
+              text="Expect your masterpiece in a few  business days, Mon-Fri – as quick as a creative breeze."
             />
             <StagesItem
               image="/images/stages/high-quality.jpg"
               icon="/images/icons/icon-step3.svg"
               title="Expect high quality output"
-              text="Let's collaborate to refine your designs 
-                        until they mirror your unique vision, all 
-                        backed by our guarantee."
+              text="Let's collaborate to refine your designs until they mirror your unique vision, allbacked by our guarantee."
             />
           </div>
         </div>
-      </div>
     </section>
   );
 };
