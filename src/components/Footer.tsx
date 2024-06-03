@@ -32,21 +32,22 @@ const Footer = () => {
 				</nav>
 				<ul className='footer__social'>
 					<li className='footer__social-item'>
-						<Link href='/'>
+						<Link target="_blank" rel="noopener noreferrer" href='https://x.com/savemydsgn' passHref>
 							<Image
 								src='/images/icons/twitter.svg'
-								alt='logo snowflake'
+								alt='Twitter link'
 								width={22}
 								height={22}
 								className='footer__icon'
 							/>
+
 						</Link>
 					</li>
 					<li className='footer__social-item'>
-						<Link href='/'>
+						<Link target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/savemy.dsgn/'>
 							<Image
 								src='/images/icons/instagram.svg'
-								alt='logo snowflake'
+								alt='Instagram link'
 								width={22}
 								height={22}
 								className='footer__icon'
@@ -54,10 +55,10 @@ const Footer = () => {
 						</Link>
 					</li>
 					<li className='footer__social-item'>
-						<Link href='/'>
+						<Link target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/savemydesign/'>
 							<Image
 								src='/images/icons/facebook.svg'
-								alt='logo snowflake'
+								alt='Facebook link'
 								width={22}
 								height={22}
 								className='footer__icon'

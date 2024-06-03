@@ -3,18 +3,17 @@
 .header {
   position: fixed;
   top: 24px;
-  right: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 842px;
-  width: 100%;
+  width: calc(100% - 48px);
   padding: 10px 24px;
   background-color: var(--primary-color);
   margin: 0 auto;
   border-radius: 12px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   z-index: 1000;
   opacity: 1;
-  transition: top .1s;
 
   &__navigation {
     display: flex;
@@ -26,9 +25,97 @@
     display: flex;
     gap: 50px;
   }
+
+  &__list-item {
+    list-style: none;
+    margin: 10px 0;
+
+    &:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--fixed {
+    opacity: 0.8;
+  }
+
+  &__button {
+    display: none;
+  }
 }
 
-.header-fixed {
-  top: 0;
-  opacity: .8;
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14px;
+  cursor: pointer;
+  z-index: 1001;
+
+  &__bar {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &--open &__bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  &--open &__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  &--open &__bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    .burger-menu {
+      display: flex;
+    }
+
+    &__list {
+      max-height: 0;
+      overflow: hidden;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--primary-color);
+      border-radius: 12px;
+      padding: 0 20px;
+      transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
+      transform: scaleY(0);
+      position: absolute;
+      max-width: 842px;
+      width: calc(100% - 48px);
+      top: 45px;
+      gap: 15px;
+
+      &--open {
+        max-height: 300px;
+        transform: scaleY(1);
+        display: flex;
+      }
+    }
+
+    &__list-item {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+
+      a {
+        display: block;
+        padding: 10px 0;
+      }
+    }
+
+    .app-button {
+      display: none;
+    }
+  }
 }

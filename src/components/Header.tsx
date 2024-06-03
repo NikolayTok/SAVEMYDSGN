@@ -8,6 +8,7 @@ import '../styles/header.scss';
 const Header = () => {
   const [lastScrollY, setLastScrollY] = useState(0)
   const [directionUp, setDirectionUp] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +28,9 @@ const Header = () => {
     };
   }, [lastScrollY]);
 
-  console.log(directionUp)
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <header className={directionUp ? 'header' : ' header header-fixed'}>
@@ -39,7 +42,7 @@ const Header = () => {
           height={24}
           className='header__logo logo'
         />
-        <ul className='header__list'>
+        <ul className={`header__list ${menuOpen ? 'header__list--open' : 'header__list--closed'}`}>
           <li className='header__list-item'>
             <Link href="/">Home</Link>
           </li>
@@ -50,6 +53,11 @@ const Header = () => {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+        <div className={`burger-menu ${menuOpen ? 'burger-menu--open' : ''}`} onClick={toggleMenu}>
+          <div className="burger-menu__bar"></div>
+          <div className="burger-menu__bar"></div>
+          <div className="burger-menu__bar"></div>
+        </div>
         <AppButton>Press <b>B</b> to book intro call</AppButton>
       </nav>
     </header>
