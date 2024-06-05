@@ -1,3 +1,4 @@
+import Project from '@/components/Project';
 import Sturzl from '@/components/Sturzl';
 import React from 'react';
 
@@ -9,6 +10,7 @@ const About = () => {
       <h1 className='hero__title'>About</h1>
       <span className='hero__sub-title'>Your monthly pass to design joy</span>
       <Sturzl/>
+      <Project/>
     </section>
   );
 };
