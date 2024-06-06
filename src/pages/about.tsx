@@ -1,6 +1,7 @@
-import Project from '@/components/Project';
-import Sturzl from '@/components/Sturzl';
 import React from 'react';
+import Sturzl from '@/components/Sturzl';
+import Project from '@/components/Project';
+import TwoBlocks from '@/components/TwoBlocks';
 
 import '../styles/home.scss';
 
@@ -11,6 +12,7 @@ const About = () => {
       <span className='hero__sub-title'>Your monthly pass to design joy</span>
       <Sturzl/>
       <Project/>
+      <TwoBlocks/>
     </section>
   );
 };

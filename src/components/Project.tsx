@@ -18,7 +18,7 @@ const Project = () => {
         <div className="project__picture">
           <Image
             src='/images/sturzl/1.png'
-            alt=''
+            alt='image.1'
             width={1000}
             height={575}
           />
