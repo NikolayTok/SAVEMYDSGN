@@ -14,8 +14,8 @@ const Project = () => {
           <p className="project__subtitle">Brandschutzplanung mit Weitblick: Gemeinsam entwickeln wir maßgeschneiderte & einzigartige Lösungen, die sowohl aktuelle Bedürfnisse erfüllen als auch zukünftigen Anforderungen gewachsen sind.</p>
         </div>
       </div>
-      <div className="project__wrapper">
-        <div className="project__picture">
+      <div className="project__wrapper sturzl__wrapper">
+        <div className="project__picture sturzl__picture">
           <Image
             src='/images/sturzl/1.png'
             alt='image.1'

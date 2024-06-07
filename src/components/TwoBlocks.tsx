@@ -6,8 +6,8 @@ import "../styles/two-blocks.scss";
 const TwoBlocks = () => {
 	return (
 		<section className='two-blocks'>
-			<div className='project__wrapper two-blocks__wrapper'>
-				<div className='project__picture two-blocks__picture--left'>
+			<div className='two-blocks__wrapper sturzl__wrapper'>
+				<div className='two-blocks__picture--left sturzl__picture'>
 					<Image
 						src='/images/sturzl/4.png'
 						alt=''
@@ -15,7 +15,7 @@ const TwoBlocks = () => {
 						height={1394}
 					/>
 				</div>
-				<div className='project__picture two-blocks__picture--right'>
+				<div className='two-blocks__picture--right sturzl__picture'>
 					<Image
 						src='/images/sturzl/5.png'
 						alt=''
