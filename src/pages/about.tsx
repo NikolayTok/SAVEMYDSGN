@@ -4,6 +4,7 @@ import Project from '@/components/Project';
 import TwoBlocks from '@/components/TwoBlocks';
 import SturzlSlider from '@/components/SturzlSlider';
 import TwoSquares from '@/components/TwoSquares';
+import BottomBlock from '@/components/BottomBlock';
 
 import '../styles/home.scss';
 
@@ -17,6 +18,7 @@ const About = () => {
       <TwoBlocks/>
       <SturzlSlider/>
       <TwoSquares/>
+      <BottomBlock/>
     </section>
   );
 };
