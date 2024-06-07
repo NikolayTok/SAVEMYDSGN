@@ -55,6 +55,10 @@
 
 @media (max-width: 620px) {
   .creation-item {
+    .app-button {
+      padding: 4px 12px;
+    }
+
 		&__img-box {
       img {
         height: auto;
