@@ -5,6 +5,7 @@ import TwoBlocks from '@/components/TwoBlocks';
 import SturzlSlider from '@/components/SturzlSlider';
 import TwoSquares from '@/components/TwoSquares';
 import BottomBlock from '@/components/BottomBlock';
+import BookDemo from '@/components/BookDemo';
 
 import '../styles/home.scss';
 
@@ -19,6 +20,7 @@ const About = () => {
       <SturzlSlider/>
       <TwoSquares/>
       <BottomBlock/>
+      <BookDemo/>
     </section>
   );
 };
