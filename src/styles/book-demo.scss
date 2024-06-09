@@ -1,80 +1,109 @@
 .book-demo {
-  margin-top: 100px;
-  line-height: 1.2;
+	margin-top: 100px;
+	line-height: 1.2;
 
-  &__wrapper {
-    max-width: 1280px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 32px;
-    background-image: url(/images/background-bookDemo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 104px 77px;
+	&__wrapper {
+		max-width: 1280px;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 32px;
+		background-image: url(/images/background-bookDemo.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		padding: 104px 77px;
+	}
+
+	&__content {
+		max-width: 725px;
+	}
+
+	&__title {
+		font-size: 56px;
+		color: var(--text-color-secondary);
+		margin-bottom: 53px;
+	}
+
+	&__btn {
+		background-color: var(--background-color);
+		color: var(--text-color);
+		font-size: 26px;
+		padding: 16px 55px;
+
+		&:hover {
+			background-color: var(--background-color-secondary);
+			color: var(--text-color-secondary);
+			border-color: var(--text-color-secondary);
+		}
+	}
+}
+
+.sturzl-book-demo {
+	.book-demo__wrapper {
+    max-width: 1392px;
+		display: flex;
+		justify-content: center;
+    padding: 180px 110px;
+	}
+  
+  .book-demo__content{
+    max-width: 100%;
   }
+}
 
-  &__content {
-    max-width: 725px;
-  }
+.sturzl-book-demo__btn {
+	color: #fff;
+	border: 1px solid E30614;
+	background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.12),
+			rgba(255, 255, 255, 0)
+		),
+		#e30614;
+}
 
-  &__title {
-    font-size: 56px;
-    color: var(--text-color-secondary);
-    margin-bottom: 53px;
-  }
-
-  &__btn {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-size: 26px;
-    padding: 16px 55px;
-
-    &:hover {
-      background-color: var(--background-color-secondary);
-      color: var(--text-color-secondary);
-      border-color: var(--text-color-secondary);
-    }
-  }
+.sturzl-book-demo__text {
+	text-align: center;
 }
 
 @media (max-width: 930px) {
-  .book-demo {
-    &__wrapper {
-      padding: 90px 45px;
-    }
-  }
+	.book-demo {
+		&__wrapper {
+			padding: 90px 45px;
+		}
+	}
 }
 
 @media (max-width: 865px) {
-  .book-demo {
-    &__wrapper {
-      padding: 60px 45px;
-    }
+	.book-demo {
+		&__wrapper {
+			padding: 60px 45px;
+		}
 
-    &__title {
-      font-size: 48px;
-      margin-bottom: 30px;
-    }
-  }
+		&__title {
+			font-size: 48px;
+			margin-bottom: 30px;
+		}
+	}
 }
 
 @media (max-width: 600px) {
-  .book-demo {
-    &__wrapper {
-      padding: 48px 22px;
-    }
+	.book-demo {
+		&__wrapper {
+			padding: 48px 22px;
+		}
 
-    &__title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 64px;
-      width: 100%;
-    }
+		&__title {
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 64px;
+			width: 100%;
+		}
 
-    &__btn {
-      width: 100%;
-      font-size: 24px;
-    }
-  }
+		&__btn {
+			width: 100%;
+			font-size: 24px;
+		}
+	}
 }
