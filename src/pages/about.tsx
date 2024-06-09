@@ -2,6 +2,10 @@ import React from 'react';
 import Sturzl from '@/components/Sturzl';
 import Project from '@/components/Project';
 import TwoBlocks from '@/components/TwoBlocks';
+import SturzlSlider from '@/components/SturzlSlider';
+import TwoSquares from '@/components/TwoSquares';
+import BottomBlock from '@/components/BottomBlock';
+import BookDemo from '@/components/BookDemo';
 
 import '../styles/home.scss';
 
@@ -13,6 +17,10 @@ const About = () => {
       <Sturzl/>
       <Project/>
       <TwoBlocks/>
+      <SturzlSlider/>
+      <TwoSquares/>
+      <BottomBlock/>
+      <BookDemo/>
     </section>
   );
 };
