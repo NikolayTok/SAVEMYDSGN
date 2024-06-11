@@ -26,4 +26,21 @@
     border-radius: 50%;
     background-color: #000;
   }
+
+  &:hover {
+    color: #ffff;
+    border-color: #000;
+    background-color: #000;
+    transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+
+    .back-button__circle {
+      background-color: #fff;
+      transition: background-color .3s ease;
+
+      path {
+        stroke: #000;
+        transition: stroke .3s ease;
+      }
+    }
+  }
 }
