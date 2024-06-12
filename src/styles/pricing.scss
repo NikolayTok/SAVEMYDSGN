@@ -1,11 +1,10 @@
 .pricing {
 	color: var(--text-color);
 	line-height: 1.2;
-	margin-top: 60px;
+	text-align: center;
 
 	&__title {
 		font-size: 48px;
-		width: 468px;
 		margin-bottom: 64px;
 	}
 }
@@ -32,7 +31,6 @@
 	.pricing {
 		&__title {
 			font-size: 36px;
-			width: 291px;
 		}
 	}
 }
