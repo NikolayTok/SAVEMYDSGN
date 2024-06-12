@@ -20,6 +20,14 @@
 	}
 }
 
+@media (max-width: 1000px) {
+	.pricing {
+		&__title {
+			font-size: 35px;
+		}
+	}
+}
+
 @media (max-width: 600px) {
 	.pricing {
 		&__title {

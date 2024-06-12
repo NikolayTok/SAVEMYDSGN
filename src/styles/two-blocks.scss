@@ -4,7 +4,6 @@
   &__wrapper {
     padding: 65px 0 117px 73px;
     display: flex;
-    justify-content: center;
     column-gap: 100px;
     overflow: hidden;
   }
@@ -13,14 +12,8 @@
     max-width: 722px;
     width: 100%;
 
-    &--left {
-      height: 1434px;
-      margin-top: 128px;
-    }
-
-    &--right {
-      height: 939px;
-      margin-right: -50px;
+    img {
+      object-position: left;
     }
   }
 }

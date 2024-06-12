@@ -7,7 +7,7 @@ const TwoBlocks = () => {
 	return (
 		<section className='two-blocks'>
 			<div className='two-blocks__wrapper sturzl__wrapper'>
-				<div className='two-blocks__picture--left sturzl__picture'>
+				<div className='two-blocks__picture sturzl__picture'>
 					<Image
 						src='/images/sturzl/4.png'
 						alt=''
@@ -15,7 +15,7 @@ const TwoBlocks = () => {
 						height={1394}
 					/>
 				</div>
-				<div className='two-blocks__picture--right sturzl__picture'>
+				<div className='two-blocks__picture sturzl__picture'>
 					<Image
 						src='/images/sturzl/5.png'
 						alt=''

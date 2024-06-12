@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 import "../styles/book-demo.scss";
 
-interface BoookDemoProps {
-	className: string;
-	buttonClassName: string;
-	textClassName: string;
+interface BookDemoProps {
+	className?: string;
+	buttonClassName?: string;
+	textClassName?: string;
 }
 
-const BookDemo = ({className, buttonClassName, textClassName}: BoookDemoProps) => {
+const BookDemo = ({className, buttonClassName, textClassName}: BookDemoProps) => {
 	return (
 		<section className={`book-demo ${className}`}>
 			<div className='book-demo__wrapper'>

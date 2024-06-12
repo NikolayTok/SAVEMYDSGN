@@ -11,9 +11,7 @@ import "../styles/home.scss";
 
 const About = () => {
 	return (
-		<section className='hero'>
-			<h1 className='hero__title'>About</h1>
-			<span className='hero__sub-title'>Your monthly pass to design joy</span>
+		<div className="no-p">
 			<Sturzl />
 			<Project />
 			<TwoBlocks />
@@ -25,7 +23,7 @@ const About = () => {
 				buttonClassName='sturzl-book-demo__btn'
 				textClassName='sturzl-book-demo__text'
 			/>
-		</section>
+		</div>
 	);
 };
 

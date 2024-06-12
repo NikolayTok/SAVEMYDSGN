@@ -3,13 +3,12 @@
 
   &__top-wrapper {
     max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 167px;
+    padding: 0 20px 167px;
   }
 
   &__top {
     max-width: 630px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   &__title {
@@ -43,10 +42,6 @@
       height: 678px;
     }
 
-    &__top {
-      max-width: 430px
-    }
-
     &__picture {
       max-width: 740px;
       width: 100%;
@@ -58,7 +53,7 @@
 @media (max-width: 850px) {
   .project {
     &__top-wrapper {
-      margin-bottom: 80px;
+      padding-bottom: 80px;
     }
 
     &__wrapper {
@@ -73,9 +68,13 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .project {
     margin-top: 70px;
+
+    &__top {
+      max-width: 430px
+    }
 
     &__title {
       font-size: 36px;
@@ -89,10 +88,6 @@
 
     &__wrapper {
       height: 420px;
-    }
-
-    &__top-wrapper {
-      margin-bottom: 40px;
     }
   }
 }
