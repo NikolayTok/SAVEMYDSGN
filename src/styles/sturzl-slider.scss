@@ -10,8 +10,19 @@
 		overflow: hidden;
 	}
 
+  &__picture--big{
+    max-width: 676px;
+    height: 476px;
+    position: relative;
+  }
+  &__picture--small{
+    width: 564px;
+    height: 400px;
+    position: absolute;
+  }
+
 	&__picture--small:nth-child(1) {
-		margin-left: -40px;
+		left: -280px;
 	}
 
 	&__picture--small:nth-child(3) {
