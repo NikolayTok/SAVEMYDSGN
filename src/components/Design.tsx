@@ -7,32 +7,32 @@ const Design = () => {
 	const designItems = [
 		{
 			image: "/images/background.jpg",
-			icon: "/images/vector.svg",
+			icon: "/images/icons/vector.svg",
 			caption: "Landing page",
 		},
 		{
 			image: "/images/background.jpg",
-			icon: "/images/bell.svg",
+			icon: "/images/icons/bell.svg",
 			caption: "Multipages",
 		},
 		{
 			image: "/images/background.jpg",
-			icon: "/images/bomb.svg",
+			icon: "/images/icons/bomb.svg",
 			caption: "Mobile App",
 		},
 		{
 			image: "/images/background.jpg",
-			icon: "/images/shopping.svg",
+			icon: "/images/icons/shopping.svg",
 			caption: "Pitch Deck",
 		},
 		{
 			image: "/images/background.jpg",
-			icon: "/images/account.svg",
+			icon: "/images/icons/account.svg",
 			caption: "Online Stores",
 		},
 		{
 			image: "/images/background.jpg",
-			icon: "/images/camera-enhance.svg",
+			icon: "/images/icons/camera-enhance.svg",
 			caption: "Web3 / Crypto",
 		},
 	];
