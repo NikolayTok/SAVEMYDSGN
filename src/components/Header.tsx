@@ -6,8 +6,8 @@ import AppButton from './AppButton';
 import '../styles/header.scss';
 
 const Header = () => {
-  const [lastScrollY, setLastScrollY] = useState(0)
-  const [directionUp, setDirectionUp] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [directionUp, setDirectionUp] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <header className={directionUp ? 'header' : ' header header-fixed'}>
+    <header className={directionUp ? 'header' : 'header header-fixed'}>
       <nav className='header__navigation'>
         <Image
           src='/images/logo/logo.svg'
@@ -58,7 +58,7 @@ const Header = () => {
           <div className="burger-menu__bar"></div>
           <div className="burger-menu__bar"></div>
         </div>
-        <AppButton>Press <b>B</b> to book intro call</AppButton>
+        <AppButton onClick={() => window.open('https://chatgpt.com/', '_blank')} link='https://chatgpt.com/'>Press <b>B</b> to book intro call</AppButton>
       </nav>
     </header>
   );

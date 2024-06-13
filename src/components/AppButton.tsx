@@ -1,29 +1,45 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import "../styles/app-button.scss";
 
 type AppButtonProps = {
-	children: React.ReactNode;
-	onClick?: () => void;
-	type?: "button" | "submit" | "reset";
-	className?: string;
+  children: React.ReactNode;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  className?: string;
+  link?: string;
 };
 
 const AppButton = ({
-	children,
-	onClick,
-	type = "button",
-	className = "",
+  children,
+  onClick,
+  type = "button",
+  className = "",
+  link,
 }: AppButtonProps) => {
-	return (
-		<button
-			className={`app-button ${className}`}
-			onClick={onClick}
-			type={type}
-		>
-			{children}
-		</button>
-	);
+
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === 'b' || e.key === 'B') {
+        window.open(link, '_blank');
+      }
+    };
+
+    window.addEventListener('keypress', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keypress', handleKeyPress);
+    };
+  }, [link]);
+
+  return (
+    <button
+      className={`app-button ${className}`}
+      onClick={onClick}
+      type={type}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default AppButton;
