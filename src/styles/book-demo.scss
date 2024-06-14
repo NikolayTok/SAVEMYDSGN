@@ -16,13 +16,14 @@
   }
 
   &__content {
-    max-width: 725px;
+    max-width: 765px;
   }
 
   &__title {
     font-size: 56px;
     color: var(--text-color-secondary);
     margin-bottom: 53px;
+    font-weight: 500;
   }
 
   &__btn {
@@ -30,6 +31,7 @@
     color: var(--text-color);
     font-size: 26px;
     padding: 16px 55px;
+    font-weight: 500;
 
     &:hover {
       background-color: var(--background-color-secondary);

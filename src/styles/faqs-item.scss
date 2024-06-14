@@ -3,6 +3,7 @@
   border: 1px solid #e2e3e6;
   padding: 24px;
   font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
 
   &__question-box {
@@ -15,6 +16,8 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-out;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   &__answer.open {

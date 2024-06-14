@@ -7,7 +7,7 @@ const Pricing: React.FC = () => {
 		{
 			title: "One-off",
 			description:
-				"Perfect for single, high-impact,conversion focused landing page.",
+				"Perfect for single, high-impact, conversion focused landing page.",
 			cost: "$1,899",
 			services: [
 				"2x revisions",

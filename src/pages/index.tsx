@@ -24,9 +24,9 @@ const Home = () => {
       <Stages />
       <Creation />
       <Design />
-      <BookDemo />
       <Pricing />
       <Faqs />
+      <BookDemo />
     </>
   );
 };
