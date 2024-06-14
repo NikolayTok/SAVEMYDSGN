@@ -5,44 +5,79 @@ import BackButton from "./BackButton";
 import "../styles/sturzl.scss";
 
 const Sturzl = () => {
-	return (
-		<section className='sturzl'>
-			<BackButton />
-			<div className='sturzl__top'>
-				<h2 className='sturzl__title'>Sturzl</h2>
-				<p className='sturzl__subtitle'>
-					Let's collaborate to refine your designs until they mirror your unique
-					vision, all backed by our guarantee.
-				</p>
-			</div>
-			<div className='sturzl__wrapper'>
-				<div className='sturzl__picture-small'>
-					<Image
-						src='/images/sturzl/2.png'
-						alt=''
-						width={444}
-						height={255}
-					/>
-				</div>
-				<div className='sturzl__picture-big'>
-					<Image
-						src='/images/sturzl/1.png'
-						alt=''
-						width={640}
-						height={368}
-					/>
-				</div>
-				<div className='sturzl__picture-small'>
-					<Image
-						src='/images/sturzl/3.png'
-						alt=''
-						width={444}
-						height={255}
-					/>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section className='sturzl'>
+      <div className='sturzl__pictures-wrapper'>
+        <BackButton />
+        <div className="sturzl__picture-box">
+          <Image
+            src='/images/sturzl/sturzl-img-top.jpg'
+            alt='sturzl-img-1'
+            width={1392}
+            height={640}
+          />
+        </div>
+        <div className="sturzl__content">
+          <div className="sturzl__content-box">
+            <h2 className="sturzl__content-title">
+              Gemeinsam gestalten wir die Städte von Morgen:
+            </h2>
+            <p className="sturzl__content-subtitle">Brandschutzplanung mit Weitblick: Gemeinsam entwickeln wir maßgeschneiderte & einzigartige Lösungen, die sowohl aktuelle Bedürfnisse erfüllen als auch zukünftigen Anforderungen gewachsen sind.</p>
+          </div>
+        </div>
+        <div className="sturzl__picture-box">
+          <Image
+            src='/images/sturzl/sturzl-img-project.jpg'
+            alt='sturzl-img-1'
+            width={1392}
+            height={255}
+          />
+        </div>
+        <div className="sturzl__picture-box">
+          <Image
+            src='/images/sturzl/sturzl-img-two-blocks.jpg'
+            alt='sturzl-img-1'
+            width={1392}
+            height={255}
+          />
+        </div>
+        <div className="sturzl__picture-box">
+          <Image
+            src='/images/sturzl/sturzl-img-slider.jpg'
+            alt='sturzl-img-1'
+            width={1392}
+            height={255}
+          />
+        </div>
+        <div className="sturzl__two-squares">
+          <div className="sturzl__picture-box">
+            <Image
+              src='/images/sturzl/sturzl-img-square-background.jpg'
+              alt='sturzl-img-1'
+              width={1392}
+              height={255}
+            />
+          </div>
+          <div className="sturzl__picture-box">
+            <Image
+              src='/images/sturzl/sturzl-img-square.jpg'
+              alt='sturzl-img-1'
+              width={1392}
+              height={255}
+            />
+          </div>
+        </div>
+        <div className="sturzl__picture-box">
+          <Image
+            src='/images/sturzl/sturzl-img-bottom.jpg'
+            alt='sturzl-img-1'
+            width={1392}
+            height={255}
+          />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Sturzl;
