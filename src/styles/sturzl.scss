@@ -1,6 +1,7 @@
 .sturzl {
   display: block;
   margin-top: 100px;
+
   &__pictures-wrapper{
     position: relative;
     max-width: 1440px;
@@ -11,15 +12,17 @@
     padding: 0 24px;
     margin: 0 auto;
   }
+
   &__content {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 75px;
   }
-  &__content-box{
+
+  &__content-box {
     max-width: 630px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   &__content-title {
@@ -31,9 +34,11 @@
     font-size: 18px;
     color: #202020;
   }
+
   &__picture-box{
     max-width: 1440px;
     width: 100%;
+
     img {
       display: block;
       width: 100%;
@@ -42,6 +47,7 @@
       border-radius: 60px;
     }
   }
+
   &__two-squares{
     width: 100%;
     display: flex;

@@ -13,8 +13,8 @@ const Sturzl = () => {
           <Image
             src='/images/sturzl/sturzl-img-top.jpg'
             alt='sturzl-img-1'
-            width={444}
-            height={255}
+            width={1392}
+            height={640}
           />
         </div>
         <div className="sturzl__content">
@@ -29,7 +29,7 @@ const Sturzl = () => {
           <Image
             src='/images/sturzl/sturzl-img-project.jpg'
             alt='sturzl-img-1'
-            width={444}
+            width={1392}
             height={255}
           />
         </div>
@@ -37,7 +37,7 @@ const Sturzl = () => {
           <Image
             src='/images/sturzl/sturzl-img-two-blocks.jpg'
             alt='sturzl-img-1'
-            width={444}
+            width={1392}
             height={255}
           />
         </div>
@@ -45,7 +45,7 @@ const Sturzl = () => {
           <Image
             src='/images/sturzl/sturzl-img-slider.jpg'
             alt='sturzl-img-1'
-            width={444}
+            width={1392}
             height={255}
           />
         </div>
@@ -54,7 +54,7 @@ const Sturzl = () => {
             <Image
               src='/images/sturzl/sturzl-img-square-background.jpg'
               alt='sturzl-img-1'
-              width={444}
+              width={1392}
               height={255}
             />
           </div>
@@ -62,7 +62,7 @@ const Sturzl = () => {
             <Image
               src='/images/sturzl/sturzl-img-square.jpg'
               alt='sturzl-img-1'
-              width={444}
+              width={1392}
               height={255}
             />
           </div>
@@ -71,7 +71,7 @@ const Sturzl = () => {
           <Image
             src='/images/sturzl/sturzl-img-bottom.jpg'
             alt='sturzl-img-1'
-            width={444}
+            width={1392}
             height={255}
           />
         </div>
