@@ -33,14 +33,16 @@
 	&__info-title {
 		color: var(--text-color-white);
 		font-size: 24px;
-		font-weight: 500;
+    line-height: 1.2;
 		margin: 32px 0 36px 0;
+    font-weight: 500;
 	}
 
 	&__info-text {
 		color: var(--text-color-gray);
 		font-size: 20px;
-		font-weight: 500;
+    line-height: 1.5;
+    font-weight: 500;
 	}
 }
 

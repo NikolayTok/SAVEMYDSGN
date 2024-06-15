@@ -40,13 +40,20 @@
 		border: 1px solid #e2e3e6;
 	}
 
+  &__tariff-box-top{
+    text-align: left;
+    width: 60%;
+  }
+
 	&__tariff-title {
 		font-size: 36px;
 		margin-bottom: 8px;
+    font-weight: 500;
 	}
 
 	&__tariff-description {
 		font-size: 15px;
+    font-weight: 400;
 		opacity: 0.5;
 	}
 
@@ -69,6 +76,7 @@
 
 	&__tariff-cost {
 		font-size: 40px;
+    font-weight: 500;
 	}
 
 	&__services-list {
@@ -76,6 +84,7 @@
 		flex-direction: column;
 		gap: 13px;
 		font-size: 18px;
+    font-weight: 500;
 
 		svg {
 			margin-right: 10px;

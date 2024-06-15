@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'GeneralSans';
+  src: 
+    url('/fonts/GeneralSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: 
+    url('/fonts/GeneralSans-Medium.otf') format('opentype'),
+    url('/fonts/GeneralSans-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -76,6 +93,7 @@ body {
 }
 
 body {
+  font-family: 'GeneralSans', sans-serif;
   padding: 24px 24px 0 24px;
 }
 
@@ -125,5 +143,5 @@ a {
 @media (max-width: 600px) {
   .no-p {
     margin: 0 -24px;
-  }  
+  }
 }
