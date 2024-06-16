@@ -1,42 +1,23 @@
 import CreationItems from "./CreationItems";
+import { projects } from "../data/projects";
 
 import "../styles/creation.scss";
 
 const Creation = () => {
-	const creationItems = [
-		{
-			image: "/images/background-graphic.png",
-			project: "Dressx.",
-			description: "Rethinking UI for Digital Metaverse",
-		},
-		{
-			image: "/images/background-graphic.png",
-			project: "Dressx.",
-			description: "Rethinking UI for Digital Metaverse",
-		},
-		{
-			image: "/images/background-graphic.png",
-			project: "Dressx.",
-			description: "Rethinking UI for Digital Metaverse",
-		},
-		{
-			image: "/images/background-graphic.png",
-			project: "Dressx.",
-			description: "Rethinking UI for Digital Metaverse",
-		},
-		{
-			image: "/images/background-graphic.png",
-			project: "Dressx.",
-			description: "Rethinking UI for Digital Metaverse",
-		},
-	];
+	const creationItems = projects.map((project) => ({
+		image: project.images[5],
+		name: project.name,
+		details: project.details,
+		projectId: project.id,
+	}));
 
 	return (
 		<section className='creation'>
 			<div className='container'>
 				<div className='creation__block'>
 					<h2 className='creation__title'>
-						From Concept to Creation:<br></br>
+						From Concept to Creation:
+						<br />
 						<span className='creation__title-grey'>
 							full-Spectrum Creativity in One Place.
 						</span>
