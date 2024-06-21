@@ -4,8 +4,9 @@ import "../styles/creation-items.scss";
 
 interface CreationItemProps {
 	image: string;
-	project: string;
-	description: string;
+	name: string;
+	details: string;
+	projectId: string;
 }
 
 const CreationItems: React.FC<{ items: CreationItemProps[] }> = ({ items }) => {
@@ -15,8 +16,9 @@ const CreationItems: React.FC<{ items: CreationItemProps[] }> = ({ items }) => {
 				<CreationItem
 					key={index}
 					image={item.image}
-					project={item.project}
-					description={item.description}
+					name={item.name}
+					details={item.details}
+					projectId={item.projectId}
 				/>
 			))}
 		</div>
