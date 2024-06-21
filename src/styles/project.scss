@@ -1,6 +1,6 @@
 .project {
   display: block;
-  margin-top: 100px;
+  margin: 100px 0 120px;
 
   &__pictures-wrapper{
     position: relative;
@@ -56,5 +56,11 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .project {
+    margin: 100px 0 85px;
   }
 }

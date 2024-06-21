@@ -1,10 +1,11 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
-import { projects, Project } from "../../data/projects";
+import { projects, Project } from "../data/projects";
 import Image from "next/image";
 import BackButton from "@/components/BackButton";
+import Loader from "@/components/Loader";
 
-import "../../styles/project.scss";
+import "../styles/project.scss";
 
 interface ProjectPageProps {
 	project: Project | null;
@@ -14,9 +15,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
 	const router = useRouter();
 
 	if (router.isFallback) {
-		return (
-				<div>Loading...</div>
-		);
+		return <Loader style={{height: '100vh'}} />
 	}
 
 	if (!project) {

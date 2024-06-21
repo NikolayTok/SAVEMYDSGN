@@ -35,28 +35,30 @@ const Header = () => {
   return (
     <header className={directionUp ? 'header' : 'header header-fixed'}>
       <nav className='header__navigation'>
-        <Image
-          src='/images/logo/logo.svg'
-          alt="Picture of the author"
-          width={146}
-          height={24}
-          className='header__logo logo'
-        />
+        <Link href="/">
+          <Image
+            className='header__logo logo'
+            src='/images/logo/logo.svg'
+            alt="Picture of the author"
+            width={146}
+            height={24}
+          />
+        </Link>
         <ul className={`header__list ${menuOpen ? 'header__list--open' : 'header__list--closed'}`}>
           <li className='header__list-item'>
             <Link href="/">Home</Link>
           </li>
           <li className='header__list-item'>
-            <Link href="/about">About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li className='header__list-item'>
-            <Link href="/contact">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
         <div className={`burger-menu ${menuOpen ? 'burger-menu--open' : ''}`} onClick={toggleMenu}>
-          <div className="burger-menu__bar"></div>
-          <div className="burger-menu__bar"></div>
-          <div className="burger-menu__bar"></div>
+          <div className="burger-menu__bar"/>
+          <div className="burger-menu__bar"/>
+          <div className="burger-menu__bar"/>
         </div>
         <AppButton onClick={() => window.open('https://chatgpt.com/', '_blank')} link='https://chatgpt.com/'>Press <b>B</b> to book intro call</AppButton>
       </nav>

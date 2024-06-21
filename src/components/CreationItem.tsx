@@ -24,7 +24,7 @@ const CreationItem = ({
 				<AppButton>mobil app</AppButton>
 				<AppButton>ux</AppButton>
 			</div>
-			<Link href={`/projects/${projectId}`}>
+			<Link className="creation-item__link" href={`/${projectId}`}>
 				<p className='creation-item__description'>
 					{name}
 					<span>{details}</span>
