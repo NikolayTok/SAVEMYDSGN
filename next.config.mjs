@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
   output: 'export',
-  assetPrefix: './',
+  basePath: '/SAVE-MY-DESIGN', // замените на имя вашего репозитория
+  assetPrefix: '/SAVE-MY-DESIGN/', // замените на имя вашего репозитория
+  images: {
+    unoptimized: true,
+  },
 };
-
-
-export default nextConfig;
