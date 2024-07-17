@@ -1,0 +1,107 @@
+.pricing-card {
+	&:nth-child(2) {
+		.app-button {
+			background-color: #afff2c;
+			border-color: #afff2c;
+
+			path {
+				fill: #000;
+			}
+
+			&:hover {
+				background-color: #000;
+
+				path {
+					fill: #fff;
+				}
+			}
+		}
+
+		.pricing-card__tariff-card {
+			border: 1px solid #000;
+			color: #fff;
+		}
+
+		.pricing-card__tariff-box-bottom {
+			border-top: 1px solid rgba(255, 255, 255, 0.12);
+		}
+	}
+
+	&__tariff-card {
+		color: #000;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 410px;
+		height: 270px;
+		padding: 20px;
+		border-radius: 16px;
+		margin-bottom: 42px;
+		border: 1px solid #e2e3e6;
+	}
+
+  &__tariff-box-top{
+    text-align: left;
+    width: 60%;
+  }
+
+	&__tariff-title {
+		font-size: 36px;
+		margin-bottom: 8px;
+    font-weight: 500;
+	}
+
+	&__tariff-description {
+		font-size: 15px;
+    font-weight: 400;
+		opacity: 0.5;
+	}
+
+	&__tariff-box-bottom {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 13px;
+		border-top: 1px solid #e2e3e6;
+
+		.app-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&:hover path {
+				fill: #000;
+			}
+		}
+	}
+
+	&__tariff-cost {
+		font-size: 40px;
+    font-weight: 500;
+	}
+
+	&__services-list {
+		display: flex;
+		flex-direction: column;
+		gap: 13px;
+		font-size: 18px;
+    font-weight: 500;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	&__service-item {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.pricing-card {
+		&__tariff-card {
+			max-width: 327px;
+			height: 272px;
+		}
+	}
+}

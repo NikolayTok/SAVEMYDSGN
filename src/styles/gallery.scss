@@ -1,0 +1,24 @@
+.gallery {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &__content {
+    margin-bottom: 46px;
+  }
+
+  .app-button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 1440px) {
+  .gallery {
+    margin: 0 -24px;
+
+    &__content {
+      margin-bottom: 26px;
+    }
+  }
+}
