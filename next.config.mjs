@@ -2,5 +2,5 @@
 const nextConfig = {
   output:'export',
 };
-
+//test
 export default nextConfig;
